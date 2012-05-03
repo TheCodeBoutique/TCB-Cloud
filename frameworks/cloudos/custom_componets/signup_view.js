@@ -34,6 +34,7 @@
 
 
 COS.SignupView = SC.View.extend ({
+	layerId:['SignupView'],
 	classNames: 'overlay_pane'.w(),
 	childViews: ['menuBase'],
 

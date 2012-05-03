@@ -13,18 +13,21 @@ Nextgen.ReadyState = SC.State.extend({
 	},
 	
 	signup: function() {
+		debugger;
     this.get('loginPage').appendChild(this.get('signupPage'));
     this.get('loginPage').buildInChild(this.get('signupPage'));
 		this.invokeLater(this.loginAnimation, 100);
   },
 
   loginAnimation: function() {
-      this._ani = this.getPath('COS.SignupView.menuBase.layout');
+	debugger;
+      // this._ani = this.getPath('COS.SignupView.menuBase.layout');
+      this._ani = SC.View.views['SignupView'];
 
       if (this._ani.top !== 140) {
-        this.getPath('COS.SignupView.menuBase').animate('top', 140, {duration: 0.4,timing:'ease-in-out'});
+        this._ani.animate('top', 140, {duration: 0.4,timing:'ease-in-out'});
       } else {
-        this.getPath('SignupView.menuBase').animate('top', 1600, {duration: 0.4,timing:'ease-in-out'});
+        this._ani.animate('top', 1600, {duration: 0.4,timing:'ease-in-out'});
         this.invokeLater(this.removeLogin, 500);
       }
     },
