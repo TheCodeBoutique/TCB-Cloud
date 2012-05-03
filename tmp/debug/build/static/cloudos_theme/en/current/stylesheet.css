@@ -1,0 +1,102 @@
+/* line 3, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/base_views-css.scss */
+.base_color {
+  background: #E7E7EA;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e7e7ea), color-stop(0.5, #e7e7ea), color-stop(1, #e7e7ea));
+  background-image: -moz-linear-gradient(top, #e7e7ea, #e7e7ea, #e7e7ea);
+}
+
+/* line 9, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/base_views-css.scss */
+.texture {
+  background-image: url('/static/cloudos_theme/en/current/source/resources/images/texture.png?1334208088');
+}
+
+/* line 8, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/buttons-css.scss */
+.emtpy_button.sc-button-view.sc-regular-size.square,
+.emtpy_button.sc-button-view.sc-regular-size.square:hover,
+.emtpy_button.sc-button-view.sc-regular-size.square.active,
+.emtpy_button.sc-button-view.sc-regular-size.square .sc-button-label
+.emtpy_button.sc-button-view.sc-regular-size.square .sc-button-inner,
+.emtpy_button.sc-button-view.sc-regular-size.square .sc-button-label {
+  cursor: pointer;
+}
+
+/* line 3, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/globals-css.scss */
+.no_opacity {
+  opacity: 0.0;
+  -moz-opacity: 0.0;
+  filter: alpha(opacity=0);
+}
+
+@-webkit-keyframes loading {
+  /* line 4, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/loading-css.scss */
+  0% {
+    color: #E7E7EA;
+  }
+
+  /* line 5, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/loading-css.scss */
+  50% {
+    color: #E7E7EA;
+  }
+
+  /* line 6, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/loading-css.scss */
+  100% {
+    color: #E7E7EA;
+  }
+}
+
+/* line 9, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/loading-css.scss */
+#loading {
+  background: #E7E7EA;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e7e7ea), color-stop(0.5, #e7e7ea), color-stop(1, #e7e7ea));
+  background-image: -moz-linear-gradient(top, #e7e7ea, #e7e7ea, #e7e7ea);
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 21, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/loading-css.scss */
+#loading p.loading {
+  background-color: none;
+  background-repeat: no-repeat;
+  background-position: 20px 10px;
+  bottom: -10px;
+  /* hide inner shadow */
+  color: transparent;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  height: 33px;
+  left: -10px;
+  /* hide inner shadow */
+  margin: 0;
+  padding-left: 44px;
+  padding-top: 10px;
+  position: absolute;
+  right: -10px;
+}
+
+/* line 3, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/text-css.scss */
+.medium {
+  font-size: 16px !important;
+}
+
+/* line 7, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/text-css.scss */
+.light {
+  font-weight: normal;
+  color: rgba(102, 102, 102, 0.8);
+}
+
+/* ==========================================================================
+*  Project:   AtlasTheme Theme Styles
+*  Copyright: @2012 My Company, Inc.
+*  ==========================================================================
+*/
+/* 
+  Place any styles you want to define in this file.  You can also break your
+  styles into multiple files.  Just add them to your resources or .lrpoj
+  directories to be included in the build.
+*/
+
