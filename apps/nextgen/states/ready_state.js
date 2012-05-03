@@ -13,16 +13,14 @@ Nextgen.ReadyState = SC.State.extend({
 	},
 	
 	signup: function() {
-		debugger;
     this.get('loginPage').appendChild(this.get('signupPage'));
     this.get('loginPage').buildInChild(this.get('signupPage'));
 		this.invokeLater(this.loginAnimation, 100);
   },
 
   loginAnimation: function() {
-	debugger;
       // this._ani = this.getPath('COS.SignupView.menuBase.layout');
-      this._ani = SC.View.views['SignupView'];
+      this._ani = SC.View.views['MenuBase'];
 
       if (this._ani.top !== 140) {
         this._ani.animate('top', 140, {duration: 0.4,timing:'ease-in-out'});
