@@ -15,27 +15,41 @@ Nextgen.ReadyState = SC.State.extend({
 	signup: function() {
     this.get('loginPage').appendChild(this.get('signupPage'));
     this.get('loginPage').buildInChild(this.get('signupPage'));
-		this.invokeLater(this.loginAnimation, 100);
+		this.invokeLater(this.showSignup, 100);
   },
 
-  loginAnimation: function() {
-      // this._ani = this.getPath('COS.SignupView.menuBase.layout');
-      this._ani = SC.View.views['MenuBase'];
+  showSignup: function() {
+    this._signupview = SC.View.views['MenuBase'];
+		this._signupview.animate('top', 140, {duration: 0.4,timing:'ease-in-out'});
+  },
 
-      if (this._ani.top !== 140) {
-        this._ani.animate('top', 140, {duration: 0.4,timing:'ease-in-out'});
-      } else {
-        this._ani.animate('top', 1600, {duration: 0.4,timing:'ease-in-out'});
-        this.invokeLater(this.removeLogin, 500);
-      }
-    },
+	submitNewSignup: function() {
+		this._signupview = SC.View.views['MenuBase'];
+    this._signupview.animate('top', 1600, {duration: 0.4,timing:'ease-in-out'});
+    this.invokeLater(this.newUserGoesToDesktopState, 500);
+	},
+	
+	newUserGoesToDesktopState: function() {
+		this.get('loginPage').removeChild(this.get('signupPage'));
+		this.invokeLater(this.gotoDesktopState, 500);
+	},
 
-    removeLogin:function() {
-      this.get('loginPage').removeChild(this.get('signupPage'));
-    },
+ 	hideSignup: function() {
+		this._signupview = SC.View.views['MenuBase'];
+    this._signupview.animate('top', 1600, {duration: 0.4,timing:'ease-in-out'});
+    this.invokeLater(this.removeSignup, 500);
+	},
+
+  removeSignup:function() {
+  	this.get('loginPage').removeChild(this.get('signupPage'));
+  },
+
+	gotoDesktopState: function() {
+		this.gotoState('desktopState');
+	},
 
   exitState: function() {
-    Nextgen.getPath('mainPage.mainPane').remove();
+    Nextgen.viewsController.set('nowShowing', 'COS.loginPage.interfaceView');
   }
 
 });

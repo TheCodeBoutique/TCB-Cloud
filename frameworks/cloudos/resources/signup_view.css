@@ -8,3 +8,137 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
   z-index: 5;
 }
+
+.radius_six {
+	border-radius: 8px;
+}
+
+.radius_six_top {
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+}
+
+.toolbar_title {
+  font-weight: bolder;
+  font-size: 18px !important;
+	color: white;
+  font-family: "Helvetica Neue";
+  text-shadow: 0px -1px 1px black;
+}
+
+.fill_out_text {
+	top: 58px;
+	left: 92px;
+	height: 30px;
+	width: 354px;
+	z-index: 5;
+	font-size: 18px !important; 
+}
+
+.signup_shadow {
+	background-image: sc_static('images/shadow_medium.png');
+	top: 88px;
+	width:500px;
+	height: 4px;
+	left: 20px;
+	z-index: 5;
+}
+
+.full_name_text {
+	top: 120px;
+	left: 50px;
+	height: 30px;
+	width: 200px;
+	z-index: 5;
+}
+
+.full_name_forms {
+	border-radius: 6px !important;
+	top: 150px;
+	height: 36px;
+	width: 268px;
+	left: 50px;
+	z-index: 5;
+}
+
+.user_name_text {
+	top: 200px;
+	left: 50px;
+	height: 30px;
+	width: 200px;
+	z-index: 5;
+}
+
+.user_name_forms {
+	border-radius: 6px !important;
+	top: 230px;
+	height: 36px;
+	width: 268px;
+	left: 50px;
+	z-index: 5;
+}
+
+.email_text {
+	top: 280px;
+	left: 50px;
+	height: 30px;
+	width: 200px;
+	z-index: 5;
+}
+
+.email_forms {
+	border-radius: 6px !important;
+	top: 310px;
+	height: 36px;
+	width: 268px;
+	left: 50px;
+	z-index: 5;
+}
+
+.password_text {
+	top: 360px;
+	left: 50px;
+	height: 30px;
+	width: 200px;
+	z-index: 5;
+}
+
+.password_forms {
+	border-radius: 6px !important;
+	top: 390px;
+	height: 73px;
+	width: 268px;
+	left: 50px;
+	z-index: 5;
+}
+
+.line_forms_signup {
+	background-color: rgba(102, 102, 102, 0.2);
+	text-shadow: 0px 1px 1px white;
+	height: 1px;
+	width: 268px;
+	top: 427px;
+	left: 50px;
+	z-index: 6;
+}
+
+.top_index {
+	z-index: 10;
+}
+
+.user_image_text {
+	top: 120px;
+	left: 352px;
+	height: 30px;
+	width: 200px;
+	z-index: 5;
+}
+
+.user_image_placeholder {
+	background-image: sc_static('images/user_image_placeholder.png');
+	top: 150px;
+	right: 50px;
+	height: 132px;
+	width: 132px;
+	z-index: 5;
+}

@@ -34,23 +34,29 @@
 
 
 COS.LoginView = SC.View.extend ({
-	childViews: ['appName', 'appIcon', 'viewContainer'],
+	childViews: ['appName', 'appIcon', 'appIconAlt', 'viewContainer'],
 	
 	buttonTitle: '',
 	descriptionText: '',
 	applicationName: '',
 	applicationIcon: '',
+	applicationIconAlt: '',
 	firstFormText: '',
 	
 	appIcon: SC.ImageView.design({
-	  layout: { top: 0, left: 0, height: 59, width: 41 },
+	  layout: { top: 10, left: 0, height: 49, width: 34 },
 	  valueBinding: '.parentView.applicationIcon',
 	}),
 	
 	appName: SC.LabelView.design({
 		classNames: ['text_style absolute app_name'],
-	  layout: { top: 13, left: 46, height: 40, width: 300 },
+	  layout: { top: 25, left: 40, height: 40, width: 300 },
 	  valueBinding: '.parentView.applicationName',
+	}),
+	
+	appIconAlt: SC.ImageView.design({
+	  layout: { top: 35, left: 225, height: 17, width: 33 },
+	  valueBinding: '.parentView.applicationIconAlt',
 	}),
 	
 	viewContainer: SC.View.design({
@@ -70,7 +76,7 @@ COS.LoginView = SC.View.extend ({
 		},
 
 		actionButton: SC.ButtonView.design({
-			classNames: ['signin_action_button'],
+			classNames: ['submit_button'],
 		  layout: { right: 50, bottom: 20, height: 25, width: 100 },
 		  titleBinding: '.parentView.parentView.buttonTitle',
 		  action: 'myMethod',

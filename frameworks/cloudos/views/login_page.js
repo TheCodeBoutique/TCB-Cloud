@@ -6,8 +6,9 @@ COS.loginPage = SC.Page.design ({
 	
 		loginView: COS.LoginView.create ({
 			layout: { centerX: 0, centerY: 0, height: 465, width: 855 },
-			applicationName: 'Cloud NextGen',
+			applicationName: 'Atlas Developer',
 			applicationIcon: sc_static('images/atlas_icon.png'),
+			applicationIconAlt: sc_static('images/os_icon.png'),
 			buttonTitle: 'Sign In',
 			descriptionText: 'To use Cloud NextGen devleoper tools, you must sign in with a registered account.  Once signed in, you can deploy your code to our cloud or build applications with no code using our application builder.',
 			firstFormText: 'User Name',
