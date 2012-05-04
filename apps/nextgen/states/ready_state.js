@@ -20,18 +20,18 @@ Nextgen.ReadyState = SC.State.extend({
 
   showSignup: function() {
     this._signupview = SC.View.views['MenuBase'];
-		this._signupview.animate('top', 140, {duration: 0.4,timing:'ease-in-out'});
+		this._signupview.animate('top', 120, {duration: 0.4,timing:'ease-in-out'});
   },
 
 	submitNewSignup: function() {
 		this._signupview = SC.View.views['MenuBase'];
     this._signupview.animate('top', 1600, {duration: 0.4,timing:'ease-in-out'});
-    this.invokeLater(this.newUserGoesToDesktopState, 500);
+    this.invokeLater(this.newUserGoesToDesktopState, 400);
 	},
 	
 	newUserGoesToDesktopState: function() {
 		this.get('loginPage').removeChild(this.get('signupPage'));
-		this.invokeLater(this.gotoDesktopState, 500);
+		this.gotoState('desktopState');
 	},
 
  	hideSignup: function() {
@@ -49,7 +49,6 @@ Nextgen.ReadyState = SC.State.extend({
 	},
 
   exitState: function() {
-    Nextgen.viewsController.set('nowShowing', 'COS.loginPage.interfaceView');
   }
 
 });

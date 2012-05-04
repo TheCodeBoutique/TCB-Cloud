@@ -13,6 +13,7 @@
 Nextgen.viewsController = SC.ObjectController.create(
 /** @scope Nextgen.viewsController.prototype */ {
 
-  nowShowing: ''
+  nowShowing: '',
+	currentDesktop: ''
 
 }) ;

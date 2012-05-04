@@ -4,7 +4,7 @@
 # ==========================================================================
 
 # CONFIGURE YOUR APPS PAGE TITLE
-config :nextgen, :title => 'Cloud NextGen' 
+config :nextgen, :title => 'Atlas Developer OS' 
 
 # CONFIGURE FRAMEWORKS
 config :all, :required => [:sproutcore, :cloudos], :minify => true, :html5_history => true

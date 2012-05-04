@@ -79,8 +79,8 @@ COS.LoginView = SC.View.extend ({
 			classNames: ['submit_button'],
 		  layout: { right: 50, bottom: 20, height: 25, width: 100 },
 		  titleBinding: '.parentView.parentView.buttonTitle',
-		  action: 'myMethod',
-		  target: 'MyApp.Controller'
+		  action: 'gotoDesktopState',
+		  target: 'Nextgen.statechart'
 		}),
 
 		viewDescription: SC.LabelView.design({
