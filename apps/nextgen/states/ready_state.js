@@ -19,12 +19,12 @@ Nextgen.ReadyState = SC.State.extend({
   },
 
   showSignup: function() {
-    this._signupview = SC.View.views['MenuBase'];
+    this._signupview = SC.View.views['SignUpMenuBase'];
 		this._signupview.animate('top', 120, {duration: 0.4,timing:'ease-in-out'});
   },
 
 	submitNewSignup: function() {
-		this._signupview = SC.View.views['MenuBase'];
+		this._signupview = SC.View.views['SignUpMenuBase'];
     this._signupview.animate('top', 1600, {duration: 0.4,timing:'ease-in-out'});
     this.invokeLater(this.newUserGoesToDesktopState, 400);
 	},
@@ -35,7 +35,7 @@ Nextgen.ReadyState = SC.State.extend({
 	},
 
  	hideSignup: function() {
-		this._signupview = SC.View.views['MenuBase'];
+		this._signupview = SC.View.views['SignUpMenuBase'];
     this._signupview.animate('top', 1600, {duration: 0.4,timing:'ease-in-out'});
     this.invokeLater(this.removeSignup, 500);
 	},
@@ -49,6 +49,7 @@ Nextgen.ReadyState = SC.State.extend({
 	},
 
   exitState: function() {
+		Nextgen.viewsController.set('nowShowing', '');
   }
 
 });

@@ -29,7 +29,13 @@
 
 
 COS.DesktopView = SC.View.extend ({
-	childViews: ['appIcon', 'actionButton', 'dynamicContent'],
+	childViews: ['appIcon', 'actionButton', 'settingsButton', 'dynamicContent'],
+	
+	render: function(context){
+		context.push([	
+			'<div class="horizontal_line absolute">','</div>',	
+		].join(''))		
+	},
 	
 	applicationIcon: '',
 	
@@ -41,14 +47,23 @@ COS.DesktopView = SC.View.extend ({
 	actionButton: SC.ButtonView.design({
 		classNames: 'submit_button'.w(),
 	  layout: { top: 10, right: 10, height: 31, width: 33 },
-	  action: 'myMethod',
-	  target: 'MyApp.Controller',
+	  action: 'gotoStartDeployState',
+	  target: 'Nextgen.statechart',
 		icon: sc_static('images/upload_cloud.png'),
+	}),
+	
+	settingsButton: SC.ButtonView.design({
+		classNames: ['text_style medium light emtpy_button'],
+	  layout: { top: 18, right: 65, height: 25, width: 75 },
+	  title: 'Sign Out',
+	  action: 'signOut',
+	  target: 'Nextgen.statechart',
+	//	icon: sc_static('images/upload_cloud.png'),
 	}),
 	
 	dynamicContent: SC.ContainerView.design({
 	  layout: { top: 50, right: 0, bottom: 0, left: 0 },
-	  nowShowingBinding: 'Nextgen.viewsController.currentDesktop'
+	  nowShowingBinding: 'Nextgen.desktopViewController.currentDesktop'
 	}),
 	
 });

@@ -84,7 +84,6 @@
 	height: 88px;
 	width: 268px;
 	right: 92px;
-	
 }
 
 .line_forms_signin {
@@ -138,6 +137,24 @@
   bottom: 0px;
   right: 3px;
   position: absolute;
+}
+
+.text_field_signin.sc-text-field-view textarea {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	bottom: 0px;
+	right: 0px;
+	padding-top: 0.0px;
+	display: block;
+	background: transparent;
+	vertical-align: middle;
+	resize: none;
+	overflow: auto;
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
 }
 
 /* signin_action_button */

@@ -9,10 +9,6 @@
   z-index: 5;
 }
 
-.radius_six {
-	border-radius: 8px;
-}
-
 .radius_six_top {
 	border-top-right-radius: 6px;
 	border-top-left-radius: 6px;

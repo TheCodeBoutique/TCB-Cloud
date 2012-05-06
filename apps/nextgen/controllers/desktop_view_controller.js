@@ -1,5 +1,5 @@
 // ==========================================================================
-// Project:   Nextgen.viewsController
+// Project:   Nextgen.desktopViewController
 // Copyright: @2012 My Company, Inc.
 // ==========================================================================
 /*globals Nextgen */
@@ -10,9 +10,9 @@
 
   @extends SC.Object
 */
-Nextgen.viewsController = SC.ObjectController.create(
-/** @scope Nextgen.viewsController.prototype */ {
+Nextgen.desktopViewController = SC.ObjectController.create(
+/** @scope Nextgen.desktopViewController.prototype */ {
 
-  nowShowing: '',
+  currentDesktop: '',
 
 }) ;

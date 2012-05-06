@@ -40,8 +40,8 @@ COS.SignupView = SC.View.extend ({
 	thirdFormText: '',
 
   menuBase: SC.View.design({
-		layerId:['MenuBase'],
-    classNames: ['base_color', 'radius_six'],
+		layerId:['SignUpMenuBase'],
+    classNames: ['base_color', 'radius_six', 'menu_shadow'],
 		childViews: ['textureView', 'blueToolbar', 'fullNameForm', 'userNameForm', 'emailForm', 'passwordForm', 'confirmPasswordForm'],
     layout:{ top: 1600, centerX: 0, height: 536, width: 537 },
 
@@ -69,7 +69,7 @@ COS.SignupView = SC.View.extend ({
     }),	
 
 		blueToolbar: SC.ToolbarView.design ({
-			classNames: ['blue_toolbar', 'radius_six_top'],
+			classNames: ['toolbar', 'blue_gradient', 'radius_six_top'],
 			childViews: ['backButton', 'signupButton', 'menuTitle'],
 			layout: { top: 0, left: 0, right: 0, height: 43 },
 			
