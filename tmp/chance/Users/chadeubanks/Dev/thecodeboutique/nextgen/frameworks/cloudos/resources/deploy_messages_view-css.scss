@@ -1,0 +1,23 @@
+
+$theme: '';
+.message_title {
+	color: white;
+  font-family: "Helvetica Neue";
+	font-size: 24px !important;
+	text-align: center;
+	font-weight: bolder;
+}
+
+.message_description {
+	font-weight: normal;
+  font-size: 16px !important;
+	text-align: center;
+	color: white;
+}
+
+.message_line {
+	top: 40px !important;
+	left: 136px !important;
+	width: 175px !important;
+	background-color: white !important;
+}

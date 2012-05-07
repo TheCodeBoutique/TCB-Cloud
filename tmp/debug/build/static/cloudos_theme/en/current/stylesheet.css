@@ -1,0 +1,280 @@
+/* line 3, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/base_views-css.scss */
+.base_color {
+  background: #E7E7EA;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e7e7ea), color-stop(0.5, #e7e7ea), color-stop(1, #e7e7ea));
+  background-image: -moz-linear-gradient(top, #e7e7ea, #e7e7ea, #e7e7ea);
+}
+
+/* line 9, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/base_views-css.scss */
+.texture {
+  background-image: url('/static/cloudos_theme/en/current/source/resources/images/texture.png?1334208088');
+}
+
+/* line 8, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/buttons-css.scss */
+.emtpy_button.sc-button-view.sc-regular-size.square,
+.emtpy_button.sc-button-view.sc-regular-size.square:hover,
+.emtpy_button.sc-button-view.sc-regular-size.square.active,
+.emtpy_button.sc-button-view.sc-regular-size.square .sc-button-label
+.emtpy_button.sc-button-view.sc-regular-size.square .sc-button-inner,
+.emtpy_button.sc-button-view.sc-regular-size.square .sc-button-label {
+  cursor: pointer;
+}
+
+/* line 16, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/buttons-css.scss */
+.submit_button.sc-button-view.sc-regular-size.square,
+.submit_button.sc-button-view.sc-regular-size.square.active,
+.submit_button.sc-button-view.sc-regular-size.square:hover {
+  background: -moz-linear-gradient(top, white 0%, white 50%, #cccccc);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(0.5, white), to(#cccccc));
+  border: 1px 	#B2B2B2 solid !important;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* line 24, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/buttons-css.scss */
+.submit_button.sc-button-view.sc-regular-size.square .sc-button-inner {
+  background: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+/* line 30, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/buttons-css.scss */
+.submit_button.sc-button-view.sc-regular-size.square .sc-button-label {
+  margin-left: 0px;
+  background: none;
+  cursor: pointer;
+  vertical-align: left;
+  color: gray;
+  height: 100%;
+  line-height: 25px;
+  font-size: 12px;
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+/* line 42, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/buttons-css.scss */
+.submit_button.sc-button-view.sc-regular-size.square .sc-button-label:hover {
+  height: 100%;
+  line-height: 25px;
+  margin-left: 0px;
+  background: none;
+  cursor: pointer;
+  vertical-align: left;
+  color: gray;
+  font-weight: normal;
+  font-size: 12px;
+  font-family: "Lucida Grande";
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+/* line 56, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/buttons-css.scss */
+.submit_button.sc-button-view.sc-regular-size.square .sc-button-label:active {
+  height: 100%;
+  line-height: 25px;
+  margin-left: 0px;
+  background: none;
+  cursor: pointer;
+  vertical-align: left;
+  color: gray;
+  font-weight: normal;
+  font-size: 12px;
+  font-family: "Lucida Grande";
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+}
+
+/* line 74, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/buttons-css.scss */
+.cancel_button.sc-button-view.sc-regular-size.square,
+.cancel_button.sc-button-view.sc-regular-size.square.active,
+.cancel_button.sc-button-view.sc-regular-size.square:hover {
+  background: -moz-linear-gradient(top, #bdbdbd 0%, #bdbdbd 50%, #91918f);
+  background: -webkit-gradient(linear, left top, left bottom, from(#bdbdbd), color-stop(0.5, #bdbdbd), to(#91918f));
+  border: 1px gray solid !important;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* line 82, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/buttons-css.scss */
+.cancel_button.sc-button-view.sc-regular-size.square .sc-button-inner {
+  background: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+/* line 88, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/buttons-css.scss */
+.cancel_button.sc-button-view.sc-regular-size.square .sc-button-label {
+  margin-left: 0px;
+  background: none;
+  cursor: pointer;
+  vertical-align: left;
+  color: white;
+  height: 100%;
+  line-height: 25px;
+  font-size: 12px;
+  /*text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.5);*/
+}
+
+/* line 100, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/buttons-css.scss */
+.cancel_button.sc-button-view.sc-regular-size.square .sc-button-label:hover {
+  height: 100%;
+  line-height: 25px;
+  margin-left: 0px;
+  background: none;
+  cursor: pointer;
+  vertical-align: left;
+  color: white;
+  font-weight: normal;
+  font-size: 12px;
+  font-family: "Lucida Grande";
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+/* line 114, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/buttons-css.scss */
+.cancel_button.sc-button-view.sc-regular-size.square .sc-button-label:active {
+  height: 100%;
+  line-height: 25px;
+  margin-left: 0px;
+  background: none;
+  cursor: pointer;
+  vertical-align: left;
+  color: white;
+  font-weight: normal;
+  font-size: 12px;
+  font-family: "Lucida Grande";
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+}
+
+/* line 3, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/globals-css.scss */
+.no_opacity {
+  opacity: 0.0;
+  -moz-opacity: 0.0;
+  filter: alpha(opacity=0);
+}
+
+/* line 9, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/globals-css.scss */
+.blue_gradient {
+  background: #3399cc;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #3399cc 0%, #003366 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3399cc), color-stop(100%, #003366));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #3399cc 0%, #003366 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #3399cc 0%, #003366 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #3399cc 0%, #003366 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #3399cc 0%, #003366 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3399cc', endColorstr='#003366',GradientType=0 );
+  /* IE6-9 */
+}
+
+/* line 20, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/globals-css.scss */
+.blue_gradient_fliped {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.72) 0%, #003366 2%, #3399cc 99%, #545454 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.72)), color-stop(2%, #003366), color-stop(99%, #3399cc), color-stop(100%, #545454));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.72) 0%, #003366 2%, #3399cc 99%, #545454 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.72) 0%, #003366 2%, #3399cc 99%, #545454 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.72) 0%, #003366 2%, #3399cc 99%, #545454 100%);
+  /* IE10+ */
+  background: linear-gradient(top, rgba(255, 255, 255, 0.72) 0%, #003366 2%, #3399cc 99%, #545454 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8ffffff', endColorstr='#545454',GradientType=0 );
+  /* IE6-9 */
+}
+
+/* line 30, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/globals-css.scss */
+.radius_six {
+  border-radius: 8px;
+}
+
+/* line 34, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/globals-css.scss */
+.menu_shadow {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5) !important;
+  -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5) !important;
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+@-webkit-keyframes loading {
+  /* line 4, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/loading-css.scss */
+  0% {
+    color: #E7E7EA;
+  }
+
+  /* line 5, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/loading-css.scss */
+  50% {
+    color: #E7E7EA;
+  }
+
+  /* line 6, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/loading-css.scss */
+  100% {
+    color: #E7E7EA;
+  }
+}
+
+/* line 9, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/loading-css.scss */
+#loading {
+  background: #E7E7EA;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e7e7ea), color-stop(0.5, #e7e7ea), color-stop(1, #e7e7ea));
+  background-image: -moz-linear-gradient(top, #e7e7ea, #e7e7ea, #e7e7ea);
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 21, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/loading-css.scss */
+#loading p.loading {
+  background-color: none;
+  background-repeat: no-repeat;
+  background-position: 20px 10px;
+  bottom: -10px;
+  /* hide inner shadow */
+  color: transparent;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  height: 33px;
+  left: -10px;
+  /* hide inner shadow */
+  margin: 0;
+  padding-left: 44px;
+  padding-top: 10px;
+  position: absolute;
+  right: -10px;
+}
+
+/* line 3, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/text-css.scss */
+.medium {
+  font-size: 16px !important;
+}
+
+/* line 7, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/text-css.scss */
+.light {
+  font-weight: normal;
+  color: rgba(102, 102, 102, 0.8);
+}
+
+/* ==========================================================================
+*  Project:   AtlasTheme Theme Styles
+*  Copyright: @2012 My Company, Inc.
+*  ==========================================================================
+*/
+/* 
+  Place any styles you want to define in this file.  You can also break your
+  styles into multiple files.  Just add them to your resources or .lrpoj
+  directories to be included in the build.
+*/
+/* line 3, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/themes/cloudos_theme/resources/toolbars-css.scss */
+.toolbar {
+  box-shadow: 0px 1px 1px white !important;
+  -moz-box-shadow: 0px 1px 1px white !important;
+  -webkit-box-shadow: 0px 1px 1px white !important;
+}
+
