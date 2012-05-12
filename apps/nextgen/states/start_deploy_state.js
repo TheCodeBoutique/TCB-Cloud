@@ -5,23 +5,24 @@ Nextgen.StartDeployState = SC.State.extend({
 		We also create a var newWidthDuringResize.  newWidthDuringResize watches for the width of the document during 
 		a resize event and passes that value to tmp in the viewsController. 
 		Next, we set a string 'baseView' to the mainPage.mainPane.  And, we set a string 'deployMessagePage' to the 
-		repositoryURLPage.interfaceView.  Finally, we invoke the next function: appendRepositoryURLMessage.
+		repositoryURLPage.interfaceView.  Finally, we invoke the next function: appendRepositoryURLMessage.  Additioanlly, 
+		we reset all deploy message views back to their original position.
 	*/	
   enterState: function() {
 		console.log("StartDeployState");
 		var currentWidth = $(document).width();
-		console.log("Current Height " + currentWidth);
-		Nextgen.viewsController.set('foo', currentWidth);
-		
-		window.onresize = function(event) {
-			var newWidthDuringResize = $(document).width();
-			console.log("New Height " + newWidthDuringResize);
-			Nextgen.viewsController.set('tmp', newWidthDuringResize);						
-		}
+		console.log("Current Width " + currentWidth);
+		Nextgen.viewsController.set('animateSize', currentWidth);
+
+		// this is a test: BULLSEYE
+		this._bullsey = SC.View.views['BullsEye'];
 		
 		this.set('baseView', Nextgen.getPath('mainPage.mainPane'));
 		this.set('deployMessagePage', COS.getPath('repositoryURLPage.interfaceView'));
 		this.invokeLater('appendRepositoryURLMessage', 100);
+		
+		this._deployMessagePage = SC.View.views['RepositoryMessageMenuBase'];
+		
   },
 	
 	/*
@@ -73,23 +74,30 @@ Nextgen.StartDeployState = SC.State.extend({
 		size. 
 	*/
 	animateMenuBaseTwo: function() {
-		var someValue = Nextgen.viewsController.foo
+		var someValue = Nextgen.viewsController.animateSize
 		var desirednewWidth = someValue / 2 - 224;
-		console.log("Center of the Screen is: " + desirednewWidth);
 		console.log("animateMenuBaseTwo");
-		this._menuBaseTwo.animate('left', desirednewWidth, { duration: 0.5,timing:'ease-in-out' },this.banks);
+		this._menuBaseTwo.animate('left', desirednewWidth, { duration: 0.5,timing:'ease-in-out' });
+		this.invokeLater('tcb', 100);
 	},
 	
-	banks: function() {
-		// debugger;
-		window.onresize = function(event) {
+	tcb: function() {
+		console.log("tcb");
+		
+		onresize = function(event) {
 			this._menuBaseTwo = SC.View.views['MenuBaseTwo'];
-			var tcb = $(document).width();
-			var bct = tcb / 2 - 224;
-			console.log("TCB " + tcb);				
-			this._menuBaseTwo.adjust('left', bct);
+			var currentWidth = $(document).width();
+			var adjustedNewWidth = currentWidth / 2 - 224;
+			console.log("Our adjusted value is " + adjustedNewWidth);
+			Nextgen.viewsController.set('passTheValue', adjustedNewWidth);
+			console.log("Pass the value = ", Nextgen.viewsController.passTheValue);
+			if(this._menuBaseTwo.isOff === NO) {
+			this._menuBaseTwo.adjust('left', Nextgen.viewsController.passTheValue)
 		}
+		}
+		
 	},
+
 	
 	/*
 		animateMenuBaseThree is similar to animateMenuBaseTwo.  To clarify, animateMenuBaseThree does the following: creating a var called someValue.  
@@ -98,9 +106,12 @@ Nextgen.StartDeployState = SC.State.extend({
 		value may have changed since the last time we grabbed it. Again we take this value and we are animating the deploy message views base to the 
 		center of the current screen size. 
 	*/
-	animateMenuBaseThree: function() {
+	animateMenuBaseThree: function(context) {
+
+		context.parentView.set('isOff', YES); //the view is out side of the frame
+		Nextgen.viewsController.set('passTheValue', -1000);
 		this._menuBaseThree = SC.View.views['MenuBaseThree'];
-		var someValue = Nextgen.viewsController.tmp
+		var someValue = Nextgen.viewsController.animateSize
 		var desirednewWidth = someValue / 2 - 224;
 		console.log("Center of the Screen is: " + desirednewWidth);
 		console.log("animateMenuBaseThree");
@@ -116,7 +127,7 @@ Nextgen.StartDeployState = SC.State.extend({
 	*/
 	animateMenuBaseFour: function() {
 		this._menuBaseFour = SC.View.views['MenuBaseFour'];
-		var someValue = Nextgen.viewsController.tmp
+		var someValue = Nextgen.viewsController.animateSize
 		var desirednewWidth = someValue / 2 - 224;
 		console.log("Center of the Screen is: " + desirednewWidth);
 		console.log("animateMenuBaseFour");
@@ -154,7 +165,7 @@ Nextgen.StartDeployState = SC.State.extend({
 		// Maybe I can set a constant to the value width / 2.  This way I have the view layout set to left width / 2  without hard coding
 		// centerX.  Thus allowing a smooth left and right animation
 		console.log("foo");
-		var someValue = Nextgen.viewsController.tmp
+		var someValue = Nextgen.viewsController.foo
 		console.log("Some Value " + someValue);
 	},	
 

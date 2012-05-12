@@ -16,6 +16,11 @@ Nextgen.viewsController = SC.ArrayController.create(
   currentView: '',
 	tmp: '',
 	foo: '',
-	ey: ''
+	ey: '',
+	
+	// below are being tested for window truth... see main.js
+	
+	animateSize: '',
+	passTheValue: ''
 
 }) ;

@@ -3,7 +3,13 @@ COS.repositoryURLPage = SC.Page.design ({
 	interfaceView: SC.View.design ({
 		classNames: ['overlay_pane'],
 		layout: { top: 0, bottom: 0, left: 0, right: 0 },
-		childViews: ['menuBaseOne', 'menuBaseTwo', 'menuBaseThree', 'menuBaseFour'],
+		childViews: ['bullseye', 'menuBaseOne', 'menuBaseTwo', 'menuBaseThree', 'menuBaseFour'],
+		
+		bullseye: SC.View.design({
+			layerId:['BullsEye'],
+			backgroundColor: "white",
+		  layout: { centerX: 0, centerY: 0, height: 1, width: 1 },
+		}),
 
 		menuBaseOne: SC.View.design({
 			layerId:['RepositoryMessageMenuBase'],
@@ -58,6 +64,7 @@ COS.repositoryURLPage = SC.Page.design ({
 		
 		menuBaseTwo: SC.View.design({
 			layerId:['MenuBaseTwo'],
+			isOff: NO,
 		  layout: { left: 2000, centerY: 0, height: 248, width: 448 },
 		  classNames: ['blue_gradient_fliped', 'radius_six', 'menu_shadow'],
 			childViews: ['cancelButton', 'nextButton'],
