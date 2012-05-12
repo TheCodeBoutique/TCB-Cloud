@@ -1,0 +1,511 @@
+/* line 3, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/deploy_messages_view-css.scss */
+.message_title {
+  color: white;
+  font-family: "Helvetica Neue";
+  font-size: 24px !important;
+  text-align: center;
+  font-weight: bolder;
+}
+
+/* line 11, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/deploy_messages_view-css.scss */
+.message_description {
+  font-weight: normal;
+  font-size: 16px !important;
+  text-align: center;
+  color: white;
+}
+
+/* line 18, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/deploy_messages_view-css.scss */
+.message_line {
+  top: 40px !important;
+  left: 136px !important;
+  width: 175px !important;
+  background-color: white !important;
+}
+
+/* line 3, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/desktop_page-css.scss */
+.main_deploy_text {
+  width: 500px;
+  top: 0px;
+  left: 0px;
+  font-weight: bold;
+  font-size: 36px !important;
+  text-align: center;
+}
+
+/* line 12, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/desktop_page-css.scss */
+.description_deploy_text {
+  width: 400px;
+  top: 45px;
+  left: 55px;
+  font-weight: bold;
+  font-size: 18px !important;
+  text-align: center;
+}
+
+/* line 21, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/desktop_page-css.scss */
+.submit_button.sc-button-view img {
+  vertical-align: middle;
+  margin-right: 2px;
+  position: relative;
+  top: 2px !important;
+  left: 1px !important;
+}
+
+/* line 30, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/desktop_page-css.scss */
+.horizontal_line {
+  background-color: rgba(102, 102, 102, 0.8);
+  top: 15px;
+  right: 58px;
+  height: 25px;
+  width: 1px;
+}
+
+/* line 3, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.absolute {
+  position: absolute;
+}
+
+/* line 7, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.anchor_top {
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 6px;
+}
+
+/* line 14, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.anchor_bottom {
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 6px;
+}
+
+/* line 21, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.embeded_gradient {
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(238, 241, 246, 0.98) 51%, #eef1f6 52%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(51%, rgba(238, 241, 246, 0.98)), color-stop(52%, #eef1f6), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(238, 241, 246, 0.98) 51%, #eef1f6 52%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(238, 241, 246, 0.98) 51%, #eef1f6 52%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(238, 241, 246, 0.98) 51%, #eef1f6 52%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(238, 241, 246, 0.98) 51%, #eef1f6 52%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
+}
+
+/* line 31, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.shadow_view {
+  background-image: url('/static/cloudos/en/current/source/resources/images/shadow.png?1334379069');
+}
+
+/* line 35, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.flipped_element {
+  -moz-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -moz-transform: skewx(25deg) translatex(150px);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5);
+}
+
+/* line 44, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.text_style {
+  color: #666666;
+  font-family: "Helvetica Neue";
+  text-shadow: 0px 1px 1px #ffffff;
+}
+
+/* line 50, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.text_style_paragraph {
+  font-family: "Lucida Grande";
+  font-weight: normal;
+  font-size: 14px !important;
+  color: rgba(102, 102, 102, 0.8);
+}
+
+/* line 57, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.app_name {
+  font-weight: bolder;
+  font-size: 24px !important;
+}
+
+/* line 62, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.sign_in_text {
+  top: 70px;
+  left: 30px;
+  font-weight: bold;
+  font-size: 30px !important;
+}
+
+/* line 69, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.line {
+  background-color: rgba(102, 102, 102, 0.2);
+  text-shadow: 0px 1px 1px #ffffff;
+  height: 1px;
+  width: 130px;
+  top: 108px;
+  left: 30px;
+}
+
+/* line 78, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.forms {
+  border-radius: 10px!important;
+  background: white;
+  border: 1px solid #bbbbbb!important;
+}
+
+/* line 84, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.signin_forms {
+  top: 105px;
+  height: 88px;
+  width: 268px;
+  right: 92px;
+}
+
+/* line 91, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.line_forms_signin {
+  background-color: rgba(102, 102, 102, 0.2);
+  text-shadow: 0px 1px 1px #ffffff;
+  height: 1px;
+  width: 268px;
+  top: 150px;
+  left: 494px;
+  z-index: 2;
+}
+
+/* line 102, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.safari .sc-text-field-view .border {
+  -webkit-appearance: none !important;
+}
+
+/* line 106, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.sc-text-field-view.focus {
+  outline: none !important;
+}
+
+/* line 110, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.text_field_signin.sc-text-field-view input {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: transparent;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+/* line 124, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.text_field_signin.sc-text-field-view .sc-hint, .sc-text-field-view .hint {
+  z-index: 0 !important;
+  position: absolute;
+  top: 9px;
+  left: 3px;
+  right: 1px;
+  bottom: 3px;
+  padding: 0px;
+  color: #AAA;
+  font-size: 12px;
+}
+
+/* line 136, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.text_field_signin.sc-text-field-view .padding {
+  top: 2px;
+  left: 7px;
+  bottom: 0px;
+  right: 3px;
+  position: absolute;
+}
+
+/* line 144, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.text_field_signin.sc-text-field-view textarea {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  bottom: 0px;
+  right: 0px;
+  padding-top: 0.0px;
+  display: block;
+  background: transparent;
+  vertical-align: middle;
+  resize: none;
+  overflow: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+/* line 165, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.signin_action_button.sc-button-view.sc-regular-size.square,
+.signin_action_button.sc-button-view.sc-regular-size.square.active,
+.signin_action_button.sc-button-view.sc-regular-size.square:hover {
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(50%, #f1f1f1), color-stop(51%, #e1e1e1), color-stop(100%, #f6f6f6));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+  /* IE6-9 */
+  border: 1px 	#B2B2B2 solid !important;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* line 179, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.signin_action_button.sc-button-view.sc-regular-size.square .sc-button-inner {
+  background: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+/* line 185, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.signin_action_button.sc-button-view.sc-regular-size.square .sc-button-label {
+  margin-left: 0px;
+  background: none;
+  cursor: pointer;
+  vertical-align: left;
+  color: gray;
+  height: 100%;
+  line-height: 25px;
+  font-size: 12px;
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+/* line 197, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.signin_action_button.sc-button-view.sc-regular-size.square .sc-button-label:hover {
+  height: 100%;
+  line-height: 25px;
+  margin-left: 0px;
+  background: none;
+  cursor: pointer;
+  vertical-align: left;
+  color: gray;
+  font-weight: normal;
+  font-size: 12px;
+  font-family: "Lucida Grande";
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+/* line 211, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/login_view-css.scss */
+.signin_action_button.sc-button-view.sc-regular-size.square .sc-button-label:active {
+  height: 100%;
+  line-height: 25px;
+  margin-left: 0px;
+  background: none;
+  cursor: pointer;
+  vertical-align: left;
+  color: gray;
+  font-weight: normal;
+  font-size: 12px;
+  font-family: "Lucida Grande";
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+}
+
+/* line 3, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/repository_message-css.scss */
+.key_form {
+  top: 2px;
+  height: 94px;
+  left: 10px;
+  right: 10px;
+}
+
+/* line 3, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.overlay_pane {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%) !important;
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.5))) !important;
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%) !important;
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%) !important;
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%) !important;
+  /* IE10+ */
+  background: linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%) !important;
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#80000000',GradientType=0 );
+  /* IE6-9 */
+  z-index: 5;
+}
+
+/* line 14, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.radius_six_top {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+/* line 19, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.toolbar_title {
+  font-weight: bolder;
+  font-size: 18px !important;
+  color: white;
+  font-family: "Helvetica Neue";
+  text-shadow: 0px -1px 1px black;
+}
+
+/* line 27, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.fill_out_text {
+  top: 58px;
+  left: 92px;
+  height: 30px;
+  width: 354px;
+  z-index: 5;
+  font-size: 18px !important;
+}
+
+/* line 36, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.signup_shadow {
+  background-image: url('/static/cloudos/en/current/source/resources/images/shadow_medium.png?1336080536');
+  top: 88px;
+  width: 500px;
+  height: 4px;
+  left: 20px;
+  z-index: 5;
+}
+
+/* line 45, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.full_name_text {
+  top: 120px;
+  left: 50px;
+  height: 30px;
+  width: 200px;
+  z-index: 5;
+}
+
+/* line 53, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.full_name_forms {
+  border-radius: 6px !important;
+  top: 150px;
+  height: 36px;
+  width: 268px;
+  left: 50px;
+  z-index: 5;
+}
+
+/* line 62, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.user_name_text {
+  top: 200px;
+  left: 50px;
+  height: 30px;
+  width: 200px;
+  z-index: 5;
+}
+
+/* line 70, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.user_name_forms {
+  border-radius: 6px !important;
+  top: 230px;
+  height: 36px;
+  width: 268px;
+  left: 50px;
+  z-index: 5;
+}
+
+/* line 79, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.email_text {
+  top: 280px;
+  left: 50px;
+  height: 30px;
+  width: 200px;
+  z-index: 5;
+}
+
+/* line 87, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.email_forms {
+  border-radius: 6px !important;
+  top: 310px;
+  height: 36px;
+  width: 268px;
+  left: 50px;
+  z-index: 5;
+}
+
+/* line 96, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.password_text {
+  top: 360px;
+  left: 50px;
+  height: 30px;
+  width: 200px;
+  z-index: 5;
+}
+
+/* line 104, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.password_forms {
+  border-radius: 6px !important;
+  top: 390px;
+  height: 73px;
+  width: 268px;
+  left: 50px;
+  z-index: 5;
+}
+
+/* line 113, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.line_forms_signup {
+  background-color: rgba(102, 102, 102, 0.2);
+  text-shadow: 0px 1px 1px white;
+  height: 1px;
+  width: 268px;
+  top: 427px;
+  left: 50px;
+  z-index: 6;
+}
+
+/* line 123, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.top_index {
+  z-index: 10;
+}
+
+/* line 127, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.user_image_text {
+  top: 120px;
+  left: 352px;
+  height: 30px;
+  width: 200px;
+  z-index: 5;
+}
+
+/* line 135, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/signup_view-css.scss */
+.user_image_placeholder {
+  background-image: url('/static/cloudos/en/current/source/resources/images/user_image_placeholder.png?1336084121');
+  top: 150px;
+  right: 50px;
+  height: 132px;
+  width: 132px;
+  z-index: 5;
+}
+
+/* line 3, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/single_form-css.scss */
+.single_form {
+  border-radius: 6px !important;
+  top: 30px;
+  height: 36px;
+  width: 268px;
+  left: 89px;
+  z-index: 5;
+}
+
+/* line 12, ./tmp/chance//Users/chadeubanks/Dev/thecodeboutique/nextgen/frameworks/cloudos/resources/single_form-css.scss */
+.repository_url_form {
+  border-radius: 6px !important;
+  top: 30px;
+  top: 129px;
+  height: 36px;
+  width: 337px;
+  left: 49px;
+  z-index: 5;
+}
+

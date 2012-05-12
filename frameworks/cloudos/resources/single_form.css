@@ -1,0 +1,18 @@
+.single_form {
+	border-radius: 6px !important;
+	top: 30px;
+	height: 36px;
+	width: 268px;
+	left: 89px;
+	z-index: 5;
+}
+
+.repository_url_form {
+	border-radius: 6px !important;
+	top: 30px;
+	top: 129px;
+	height: 36px;
+	width: 337px;
+	left: 49px;
+	z-index: 5;
+}

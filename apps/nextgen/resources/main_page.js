@@ -21,7 +21,7 @@ Nextgen.mainPage = SC.Page.design({
 			
 			shadowDOM: SC.ContainerView.design({
 	      layout: { top: 0, right: 0, bottom: 0, left: 0 },
-	      nowShowingBinding: 'Nextgen.viewsController.nowShowing'
+	      nowShowingBinding: 'Nextgen.viewsController.currentView'
 	    }),
 
     }),

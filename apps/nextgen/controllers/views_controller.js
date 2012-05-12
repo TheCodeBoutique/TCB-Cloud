@@ -8,11 +8,14 @@
 
   (Document Your Controller Here)
 
-  @extends SC.Object
+  @extends SC.ArrayController
 */
-Nextgen.viewsController = SC.ObjectController.create(
+Nextgen.viewsController = SC.ArrayController.create(
 /** @scope Nextgen.viewsController.prototype */ {
 
-  nowShowing: '',
+  currentView: '',
+	tmp: '',
+	foo: '',
+	ey: ''
 
 }) ;

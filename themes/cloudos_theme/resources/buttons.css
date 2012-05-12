@@ -1,3 +1,11 @@
+.sc-button-view img {
+	vertical-align: middle;
+	margin-right: 2px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
 .emtpy_button.sc-button-view.sc-regular-size.square,
 .emtpy_button.sc-button-view.sc-regular-size.square:hover,
 .emtpy_button.sc-button-view.sc-regular-size.square.active,

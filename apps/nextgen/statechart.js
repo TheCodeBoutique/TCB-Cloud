@@ -3,10 +3,9 @@ Nextgen.statechart = SC.Statechart.create({
   initialState: 'readyState',
   
   readyState: SC.State.plugin('Nextgen.ReadyState'),
-  desktopState: SC.State.plugin('Nextgen.DesktopState'),
+  loggedOutState: SC.State.plugin('Nextgen.LoggedOutState'),
+	desktopState: SC.State.plugin('Nextgen.DesktopState'),
+	desktopWithDataState: SC.State.plugin('Nextgen.DesktopWithDataState'),
 	startDeployState: SC.State.plugin('Nextgen.StartDeployState'),
-	deployKeyState: SC.State.plugin('Nextgen.DeployKeyState'),
-	deployBranchState: SC.State.plugin('Nextgen.DeployBranchState'),
-	deployIndexState: SC.State.plugin('Nextgen.DeployIndexState')
-
+	sshDeployState: SC.State.plugin('Nextgen.SSHDeployState'),
 });
