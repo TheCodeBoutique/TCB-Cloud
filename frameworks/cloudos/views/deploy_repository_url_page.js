@@ -56,7 +56,7 @@ COS.repositoryURLPage = SC.Page.design ({
 				classNames: 'submit_button'.w(),
 			  layout: { bottom: 10, right: 100, height: 25, width: 100 },
 			  title: 'Next',
-			  action: 'removeRepositoryURLMessage',
+			  action: 'slideInDeployKeyMenu',
 			  target: 'Nextgen.statechart'
 			}),
 			
@@ -64,7 +64,7 @@ COS.repositoryURLPage = SC.Page.design ({
 		
 		menuBaseTwo: SC.View.design({
 			layerId:['MenuBaseTwo'],
-			isOff: NO,
+			isActiveBinding: 'Nextgen.viewsController.isActive',
 		  layout: { left: 2000, centerY: 0, height: 248, width: 448 },
 		  classNames: ['blue_gradient_fliped', 'radius_six', 'menu_shadow'],
 			childViews: ['cancelButton', 'nextButton'],
@@ -87,7 +87,7 @@ COS.repositoryURLPage = SC.Page.design ({
 				classNames: 'cancel_button'.w(),
 			  layout: { bottom: 10, left: 100, height: 25, width: 100 },
 			  title: 'Cancel',
-			  action: 'previousState',
+			  action: 'slideInDeployKeyMenuReverse',
 			  target: 'Nextgen.statechart'
 			}),
 
@@ -95,7 +95,7 @@ COS.repositoryURLPage = SC.Page.design ({
 				classNames: 'submit_button'.w(),
 			  layout: { bottom: 10, right: 100, height: 25, width: 100 },
 			  title: 'Generate',
-			  action: 'animateMenuBaseThree',
+			  action: 'slideInRepositoryBranchMenu',
 			  target: 'Nextgen.statechart'
 			}),
 
@@ -103,6 +103,7 @@ COS.repositoryURLPage = SC.Page.design ({
 		
 		menuBaseThree: SC.View.design({
 			layerId:['MenuBaseThree'],
+			isActiveBinding: 'Nextgen.viewsController.isActive',
 		  layout: { left: 2000, centerY: 0, height: 248, width: 448 },
 		  classNames: ['blue_gradient_fliped', 'radius_six', 'menu_shadow'],
 			childViews: ['cancelButton', 'nextButton'],
@@ -111,7 +112,7 @@ COS.repositoryURLPage = SC.Page.design ({
 				classNames: 'cancel_button'.w(),
 			  layout: { bottom: 10, left: 100, height: 25, width: 100 },
 			  title: 'Cancel',
-			  action: 'previousState',
+			  action: 'slideInRepositoryBranchMenuReverse',
 			  target: 'Nextgen.statechart'
 			}),
 
@@ -119,7 +120,7 @@ COS.repositoryURLPage = SC.Page.design ({
 				classNames: 'submit_button'.w(),
 			  layout: { bottom: 10, right: 100, height: 25, width: 100 },
 			  title: 'Next',
-			  action: 'animateMenuBaseFour',
+			  action: 'slideInIndexMenu',
 			  target: 'Nextgen.statechart'
 			}),
 
@@ -127,6 +128,7 @@ COS.repositoryURLPage = SC.Page.design ({
 		
 		menuBaseFour: SC.View.design({
 			layerId:['MenuBaseFour'],
+			isActiveBinding: 'Nextgen.viewsController.isActive',
 		  layout: { left: 2000, centerY: 0, height: 248, width: 448 },
 		  classNames: ['blue_gradient_fliped', 'radius_six', 'menu_shadow'],
 			childViews: ['cancelButton', 'nextButton'],
@@ -135,7 +137,7 @@ COS.repositoryURLPage = SC.Page.design ({
 				classNames: 'cancel_button'.w(),
 			  layout: { bottom: 10, left: 100, height: 25, width: 100 },
 			  title: 'Cancel',
-			  action: 'previousState',
+			  action: 'slideInIndexMenuReverse',
 			  target: 'Nextgen.statechart'
 			}),
 
@@ -144,7 +146,8 @@ COS.repositoryURLPage = SC.Page.design ({
 			  layout: { bottom: 10, right: 100, height: 25, width: 100 },
 			  title: 'Deploy',
 			  action: 'deployApplication',
-			  target: 'Nextgen.statechart'
+			  target: 'Nextgen.statechart',
+				isEnabledBinding: 'Nextgen.viewsController.isEnabled'
 			}),
 
 		}),

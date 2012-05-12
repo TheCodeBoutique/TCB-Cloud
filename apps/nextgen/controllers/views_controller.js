@@ -21,6 +21,15 @@ Nextgen.viewsController = SC.ArrayController.create(
 	// below are being tested for window truth... see main.js
 	
 	animateSize: '',
-	passTheValue: ''
+	passTheValue: '',
+	
+	// below are being tested for message animations... see StartDeployState
+	
+	isActive: NO,
+	
+	
+	// isEnabled for the deploy button... set it to no after initial click to deploy.  
+	
+	isEnabled: YES
 
 }) ;
