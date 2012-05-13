@@ -13,8 +13,8 @@ COS.repositoryURLPage = SC.Page.design ({
 
 		menuBaseOne: SC.View.design({
 			layerId:['RepositoryMessageMenuBase'],
-		  layout: { centerX: 0, centerY: 0, height: 248, width: 448 },
-		  classNames: ['blue_gradient_fliped', 'radius_six', 'no_opacity', 'menu_shadow'],
+		  layout: COS.PANE_LAYOUT.DEPLOY_MENU_LAYOUT,
+		  classNames: ['blue_gradient_fliped', 'radius_six', 'menu_shadow'],
 			childViews: ['titleView', 'descriptionView', 'textField', 'cancelButton', 'nextButton'],
 
 			render: function(context){
@@ -48,7 +48,7 @@ COS.repositoryURLPage = SC.Page.design ({
 				classNames: 'cancel_button'.w(),
 			  layout: { bottom: 10, left: 100, height: 25, width: 100 },
 			  title: 'Cancel',
-			  action: 'previousState',
+			  action: 'scaleDown',
 			  target: 'Nextgen.statechart'
 			}),
 
@@ -64,7 +64,7 @@ COS.repositoryURLPage = SC.Page.design ({
 		
 		menuBaseTwo: SC.View.design({
 			layerId:['MenuBaseTwo'],
-			isActiveBinding: 'Nextgen.viewsController.isActive',
+			isActive: 'Nextgen.viewsController.isActive',
 		  layout: { left: 2000, centerY: 0, height: 248, width: 448 },
 		  classNames: ['blue_gradient_fliped', 'radius_six', 'menu_shadow'],
 			childViews: ['cancelButton', 'nextButton'],
@@ -103,7 +103,7 @@ COS.repositoryURLPage = SC.Page.design ({
 		
 		menuBaseThree: SC.View.design({
 			layerId:['MenuBaseThree'],
-			isActiveBinding: 'Nextgen.viewsController.isActive',
+			isActive: 'Nextgen.viewsController.isActive',
 		  layout: { left: 2000, centerY: 0, height: 248, width: 448 },
 		  classNames: ['blue_gradient_fliped', 'radius_six', 'menu_shadow'],
 			childViews: ['cancelButton', 'nextButton'],
@@ -128,7 +128,7 @@ COS.repositoryURLPage = SC.Page.design ({
 		
 		menuBaseFour: SC.View.design({
 			layerId:['MenuBaseFour'],
-			isActiveBinding: 'Nextgen.viewsController.isActive',
+			isActive: 'Nextgen.viewsController.isActive',
 		  layout: { left: 2000, centerY: 0, height: 248, width: 448 },
 		  classNames: ['blue_gradient_fliped', 'radius_six', 'menu_shadow'],
 			childViews: ['cancelButton', 'nextButton'],

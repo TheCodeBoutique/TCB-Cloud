@@ -22,34 +22,4 @@ Nextgen.main = function main() {
 
 function main() { Nextgen.main(); }
 
-onload = function() {
-	var a = $(document).width();
-	console.log("a = " + a);
-	
-	Nextgen.viewsController.set('animateSize', a);
-	
-	var tmp = Nextgen.viewsController.animateSize
-	console.log("Current Controllers animate value is ", Nextgen.viewsController.animateSize);
-	
-	
-	onresize = function(event) {
-	
- 		var b = $(document).width();
- 			console.log("b = " + b);
-			
-		if (a-b === 0) {
-			console.log("truth is first");
-			Nextgen.viewsController.set('animateSize', a);
-		} else if (a-b != a) {
-			console.log("truth is second");
-			Nextgen.viewsController.set('animateSize', b);
-		} 
-
-		console.log("Current Controllers animate value is ", Nextgen.viewsController.animateSize);
-
-	}
-	
-}
-
-
 

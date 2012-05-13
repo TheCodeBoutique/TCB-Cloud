@@ -31,5 +31,6 @@ Nextgen.viewsController = SC.ArrayController.create(
 	// isEnabled for the deploy button... set it to no after initial click to deploy.  
 	
 	isEnabled: YES
+	
 
 }) ;
