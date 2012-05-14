@@ -26,7 +26,16 @@ function main() {
 
 
 function fetchDidComplete(data) {
-  console.log("fetchDidComplete", data);
+  if(!data) return;
+  var ids = [];
+  //TODO most likely will need sparase array if number of app reaches 1000 plus
+  for(var i = 0; i < data.length; i++) {
+        ids.push(data[i].id);
+  }
+  //need to tweak send to request to the server
+  Nextgen.store.loadRecords(Nextgen.Application, data,ids);
+
+  Nextgen.applicationsController.set('content',Nextgen.store.find(Nextgen.Application));
 }
 
 
