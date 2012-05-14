@@ -3,6 +3,7 @@ Nextgen.DesktopWithDataState = SC.State.extend({
   enterState: function() {
 		console.log("DesktopWithDataState");
 		Nextgen.desktopViewsController.set('currentDesktopView', COS.nonEmptyDesktopPage.interfaceView);
+    Nextgen.store.find(Nextgen.ApplicationQuery);
   },
 
 	gotoDeployState: function() {

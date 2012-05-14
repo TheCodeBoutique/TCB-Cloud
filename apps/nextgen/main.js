@@ -15,11 +15,18 @@ Nextgen.main = function main() {
 
   // Step 1: Tell your app it will load via states
   var statechart = Nextgen.statechart;
-  SC.RootResponder.responder.set('defaultResponder', statechart); 
+  SC.RootResponder.responder.set('defaultResponder', statechart);
   statechart.initStatechart();
 
 };
 
-function main() { Nextgen.main(); }
+function main() {
+  Nextgen.main();
+}
+
+
+function fetchDidComplete(data) {
+  console.log("fetchDidComplete", data);
+}
 
 
