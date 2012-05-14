@@ -8,10 +8,10 @@ Nextgen.StartDeployState = SC.State.extend({
 		Nextgen.viewsController.set('isEnabled', YES);
 		
 		this.set('baseView', Nextgen.getPath('mainPage.mainPane'));
-		this.set('deployMessagePage', COS.getPath('repositoryURLPage.interfaceView'));
+		this.set('deployMessagePage', COS.getPath('deployMessagePage.interfaceView'));
 		this.invokeLater('appendRepositoryURLMessage', 100);
 	  
-	  this._deployMessagePage = SC.View.views['RepositoryMessageMenuBase'];
+	  this._deployMessagePage = SC.View.views['MenuBaseOne'];
 		this._deployMessagePage.animate('opacity', 0.0, { duration: 0.1,timing:'ease-in-out' });
 	
 	},
@@ -20,7 +20,7 @@ Nextgen.StartDeployState = SC.State.extend({
 	appendRepositoryURLMessage: function() {
 		this.get('baseView').appendChild(this.get('deployMessagePage'));
 	  this.get('baseView').buildInChild(this.get('deployMessagePage'));
-		this._deployMessagePage = SC.View.views['RepositoryMessageMenuBase'];
+		this._deployMessagePage = SC.View.views['MenuBaseOne'];
 		this.invokeLater('scaleIn', 200);
 	},
 	
@@ -36,14 +36,14 @@ Nextgen.StartDeployState = SC.State.extend({
 	
 	slideInDeployKeyMenu: function() {
 		console.log("slideInDeployKeyMenu");
-		Nextgen.animations('RepositoryMessageMenuBase', 'slideLeftOut'),
+		Nextgen.animations('MenuBaseOne', 'slideLeftOut'),
 		this._deployMessagePage.animate('opacity', 1.0, { duration: 0.1,timing:'ease-in-out' });
 		Nextgen.animations('MenuBaseTwo', 'slideLeftCenter')
 	},
 	
 	slideInDeployKeyMenuReverse: function() {
 		console.log("slideInDeployKeyMenuReverse");
-		Nextgen.animations('RepositoryMessageMenuBase', 'slideRightCenter'),
+		Nextgen.animations('MenuBaseOne', 'slideRightCenter'),
 		Nextgen.animations('MenuBaseTwo', 'slideRightOut')
 	},
 	

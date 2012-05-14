@@ -1,18 +1,12 @@
-COS.repositoryURLPage = SC.Page.design ({
+COS.deployMessagePage = SC.Page.design ({
 	
 	interfaceView: SC.View.design ({
 		classNames: ['overlay_pane'],
 		layout: { top: 0, bottom: 0, left: 0, right: 0 },
-		childViews: ['bullseye', 'menuBaseOne', 'menuBaseTwo', 'menuBaseThree', 'menuBaseFour'],
-		
-		bullseye: SC.View.design({
-			layerId:['BullsEye'],
-			backgroundColor: "white",
-		  layout: { centerX: 0, centerY: 0, height: 1, width: 1 },
-		}),
+		childViews: ['menuBaseOne', 'menuBaseTwo', 'menuBaseThree', 'menuBaseFour'],
 
 		menuBaseOne: SC.View.design({
-			layerId:['RepositoryMessageMenuBase'],
+			layerId:['MenuBaseOne'],
 		  layout: COS.PANE_LAYOUT.DEPLOY_MENU_LAYOUT,
 		  classNames: ['blue_gradient_fliped', 'radius_six', 'menu_shadow'],
 			childViews: ['titleView', 'descriptionView', 'textField', 'cancelButton', 'nextButton'],

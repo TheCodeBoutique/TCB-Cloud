@@ -52,7 +52,7 @@ SC.mixin(Nextgen,{
 	},
 	
 	cleanupViews: function() {
-		var v1 = SC.View.views['RepositoryMessageMenuBase'];	 
+		var v1 = SC.View.views['MenuBaseOne'];	 
 		var v2 = SC.View.views['MenuBaseTwo'];
 		var v3 = SC.View.views['MenuBaseThree'];
 		var v4 = SC.View.views['MenuBaseFour'];
