@@ -1,0 +1,36 @@
+
+$theme: '';
+.main_deploy_text {
+	width: 500px;
+	top: 0px;
+	left: 0px;
+	font-weight: bold;
+  font-size: 36px !important;
+	text-align: center;
+}
+
+.description_deploy_text {
+	width: 400px;
+	top: 45px;
+	left: 55px;
+	font-weight: bold;
+  font-size: 18px !important;
+	text-align: center;
+}
+
+.submit_button.sc-button-view img {
+	vertical-align: middle;
+	margin-right: 2px;
+	position: relative;
+	top: 2px !important;
+	left: 1px !important;
+}
+
+
+.horizontal_line {
+	background-color: rgba(102, 102, 102, 0.8);
+	top: 15px;
+	right: 58px;
+	height: 25px;
+	width: 1px;
+}

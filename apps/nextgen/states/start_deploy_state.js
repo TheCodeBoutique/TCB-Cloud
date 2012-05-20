@@ -74,18 +74,19 @@ Nextgen.StartDeployState = SC.State.extend({
 	deployApplication: function() {
 		console.log("Submitted your applications information.");
 		Nextgen.viewsController.set('isEnabled', NO);
-		this.invokeLater('checkForResponseBack', 500);
+		this.invokeLater('checkForResponseBack', 300);
 	},
 	
 	checkForResponseBack: function() {
 		console.log("Deploy is succesful.");
-		this.invokeLater('removeDeployMessages', 500);
+		this._deployMessagePageLast = SC.View.views['MenuBaseFour'];
+		this.invokeLater('removeDeployMessages', 200);
 	},
 	
 	removeDeployMessages: function() {
 		console.log("removeDeployMessages");
-		this._deployMessagePage.animate('scale', 0.0, { duration: 0.3,timing:'ease-in-out' });
-		this._deployMessagePage.animate('opacity', 0.0, { duration: 0.5,timing:'ease-in-out' });
+		this._deployMessagePageLast.animate('scale', 0.0, { duration: 0.3,timing:'ease-in-out' });
+		this._deployMessagePageLast.animate('opacity', 0.0, { duration: 0.5,timing:'ease-in-out' });
 		this.invokeLater('gotoDesktopWithData', 650);
 		this.invokeLater('Nextgen.cleanupViews',652);
 	},
@@ -94,7 +95,7 @@ Nextgen.StartDeployState = SC.State.extend({
 		console.log("gotoDesktopWithData");
 		this.get('baseView').removeChild(this.get('deployMessagePage'));
 		this.gotoState('desktopWithDataState');
-		Nextgen.desktopViewsController.set('currentDesktopView', null);
+		//Nextgen.desktopViewsController.set('currentDesktopView', null);
 	},
 	
 	scaleDown: function() {

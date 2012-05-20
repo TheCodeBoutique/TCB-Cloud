@@ -63,7 +63,7 @@ Nextgen.loginPage = SC.Page.design ({
 				  layout: { top: 112, right: 98, height: 36, width: 260 },
 					valueBinding: 'Nextgen.authenticateController.userName',
 				  hint: 'User Name',
-				  isPassword: NO,
+				  password: NO,
 				  isTextArea: NO
 				}),
 
@@ -72,7 +72,7 @@ Nextgen.loginPage = SC.Page.design ({
 				  layout: { top: 153, right: 98, height: 36, width: 260 },
 					valueBinding: 'Nextgen.authenticateController.userPassword',
 				  hint: 'Password',
-				  isPassword: YES,
+				  password: YES,
 				  isTextArea: NO
 				}),
 				
